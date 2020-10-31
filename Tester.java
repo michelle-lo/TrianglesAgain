@@ -9,6 +9,15 @@ public class Tester {
     Point p4 = new Point (5,6);
     Point p5 = new Point (10,5);
     Point p6 = new Point (10,10);
+    //triangle 3
+    Point p7 = new Point (0.1, 0.1);
+    Point p8 = new Point (-1.9, 0.1);
+    Point p9 = new Point (-0.9, -1.632051);
+    //triangle 4
+    Point p10 = new Point (0, 0);
+    Point p11 = new Point (1, 1);
+    Point p12 = new Point (2, 0);
+
 
     System.out.println("----distanceTo----");
     System.out.println(p1.distanceTo(p2)); //2.828
@@ -19,6 +28,8 @@ public class Tester {
 
     Triangles t1 = new Triangles (p1, p2, p3);
     Triangles t2 = new Triangles (p4, p5, p6);
+    Triangles t3 = new Triangles (p7, p8, p9);
+    Triangles t4  = new Triangles (p10, p11, p12);
     //Triangle t2 = new Triangle (3, 4);
     //Triangle t3 = new Triangle (4, 2);
     System.out.println("----getPerimeter----");
@@ -27,6 +38,14 @@ public class Tester {
     System.out.println("----getArea----");
     System.out.println(t1.getArea()); //around 3
     System.out.println(t2.getArea()); //12.5
+    System.out.println("----classify----");
+    System.out.println(t1.classify()); //scalene
+    System.out.println(t2.classify()); //scalene
+    System.out.println(t3.classify()); //equilateral
+    System.out.println(t4.classify()); //isosceles
+
+
+
 
 
 

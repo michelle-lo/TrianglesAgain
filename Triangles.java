@@ -35,8 +35,18 @@ public class Triangles {
   //Return the "equilateral" "isosceles" or "scalene"
   //Round distances to the nearest tenthousandths for your classifications.
   public String classify() {
-    double A = (Math.round(v1.distanceTo(v2) * 10000)) / 10000.0;
-    return "" + A;
+
+    double a = (Math.round(v1.distanceTo(v2) * 10000)) / 10000.0;
+    double b = (Math.round(v2.distanceTo(v3) * 10000)) / 10000.0;
+    double c = (Math.round(v3.distanceTo(v1) * 10000)) / 10000.0;
+
+    if (a == b && b == c && c == b) {
+      return "equilateral";
+    } else if (a != b && b != c && a != c) {
+      return "scalene";
+    } else {
+      return "isosceles";
+    }
   }
 
 /*

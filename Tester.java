@@ -10,5 +10,7 @@ public class Tester {
     System.out.println(p1.equals(p2)); //false
     System.out.println(p1.equals(p3)); //true
   }
+  //public static String printcheck (String name, Object actual, Object expected) {
 
+  //}
 }

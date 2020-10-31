@@ -46,14 +46,23 @@ public class Tester {
     System.out.println("----toString----");
     System.out.println(t1.toString()); //"v1(1.0, 2.0) v2(3.0, 4.0) v3(4.0, 2.0)"
     System.out.println(t3.toString()); //"v1(0.1, 0.1) v2(-1.9, 0.1) v3(-0.9, -1.632051)"
-
-
-
-
+    System.out.println("----setVertex----");
+    System.out.println("orig: " + t1.toString());
+    t1.setVertex(0, p4);
+    System.out.println("new: " + t1.toString()); //"new: v1(5, 6)..."
+    t1.setVertex(1, p4);
+    System.out.println("new: " + t1.toString()); //"new: v2(5, 6)..."
+    t1.setVertex(2, p4);
+    System.out.println("new: " + t1.toString()); //"new: v3(5, 6)..."
+    t1.setVertex(3, p4);
+    System.out.println("new: " + t1.toString()); //"new: no change"
 
 
   }
-  //public static String printcheck (String name, Object actual, Object expected) {
+  /*
+  public static void print (String method; int[] actual; Object expected) {
 
-  //}
+  }
+  */
+
 }

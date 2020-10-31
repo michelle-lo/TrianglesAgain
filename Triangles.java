@@ -56,6 +56,17 @@ public class Triangles {
             ") v3(" + v3.getX() + ", " + v3.getY() + ")";
   }
 
+  //replace the specified Point (0,1, or 2) with the new Point
+  public void setVertex(int index, Point newP) {
+    Point orig = v1;
+    if (index == 0) {
+      v1 = newP;
+    } else if (index == 1) {
+      v2 = newP;
+    } else if (index == 2) {
+      v3 = newP;
+    }
+  }
 
 
 

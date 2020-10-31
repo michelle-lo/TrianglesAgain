@@ -43,7 +43,9 @@ public class Tester {
     System.out.println(t2.classify()); //scalene
     System.out.println(t3.classify()); //equilateral
     System.out.println(t4.classify()); //isosceles
-
+    System.out.println("----toString----");
+    System.out.println(t1.toString()); //"v1(1.0, 2.0) v2(3.0, 4.0) v3(4.0, 2.0)"
+    System.out.println(t3.toString()); //"v1(0.1, 0.1) v2(-1.9, 0.1) v3(-0.9, -1.632051)"
 
 
 

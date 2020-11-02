@@ -30,8 +30,6 @@ public class Tester {
     Triangle t2 = new Triangle (p4, p5, p6);
     Triangle t3 = new Triangle (p7, p8, p9);
     Triangle t4  = new Triangle (p10, p11, p12);
-    //Triangle t2 = new Triangle (3, 4);
-    //Triangle t3 = new Triangle (4, 2);
     System.out.println("----getPerimeter----");
     System.out.println(t1.getPerimeter()); //8.064
     System.out.println(t2.getPerimeter()); //16.502

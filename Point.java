@@ -34,7 +34,7 @@ public class Point {
 
   /*b) The equals method returns true when this Point has the
   same x and y values as the other Point.  */
-  public boolean equals( Point other) {
-    return (x == other.getX() && y == other.getY());
+  public boolean equals(Point other) {
+    return (other != null) && (x == other.getX() && y == other.getY());
   }
 }

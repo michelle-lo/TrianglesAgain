@@ -26,10 +26,10 @@ public class Tester {
     System.out.println(p1.equals(p1_2)); //true
 
 
-    Triangles t1 = new Triangles (p1, p2, p3);
-    Triangles t2 = new Triangles (p4, p5, p6);
-    Triangles t3 = new Triangles (p7, p8, p9);
-    Triangles t4  = new Triangles (p10, p11, p12);
+    Triangle t1 = new Triangle (p1, p2, p3);
+    Triangle t2 = new Triangle (p4, p5, p6);
+    Triangle t3 = new Triangle (p7, p8, p9);
+    Triangle t4  = new Triangle (p10, p11, p12);
     //Triangle t2 = new Triangle (3, 4);
     //Triangle t3 = new Triangle (4, 2);
     System.out.println("----getPerimeter----");
@@ -57,12 +57,21 @@ public class Tester {
     t1.setVertex(3, p4);
     System.out.println("new: " + t1.toString()); //"new: no change"
 
-
+    System.out.println("----getPerimeter----");
+    print("getPerimeter", t2.getPerimeter(), 16.502143751025635);
   }
-  /*
-  public static void print (String method; int[] actual; Object expected) {
-
+  //inspired by Chistopher Liu's Tester Driver?
+  public static void print (String method, Object actual, Object expected) {
+    String str = "";
+    str += "Actual: " + actual + "\n";
+    str += "Expected: " + expected + "\n";
+    if (actual.equals(expected)) {
+      str += "Success! :)\n";
+    } else {
+      str += "Fail! :(\n";
+    }
+    System.out.println(str);
   }
-  */
+
 
 }

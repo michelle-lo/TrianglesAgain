@@ -1,4 +1,6 @@
-public class Triangle {
+public class Triangles {
+//made this file by accident. oops.
+/*
   private Point v1, v2, v3;
 
   public Triangle(Point a, Point b, Point c) {
@@ -68,7 +70,7 @@ public class Triangle {
     }
   }
 
-
+*/
 
 
 }
